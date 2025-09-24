@@ -1,4 +1,4 @@
-:root{
+    :root{
       --bg:#000;
       --neon:#00ff00;
       --neon-2:#00cc66;
@@ -36,7 +36,7 @@
     .logo {
   width: 900px;
   height: 200px;
-  border-radius:0%;
+  border-radius:1%;
   background-image: url('https://i.postimg.cc/cLBJS5nK/IMG-20250924-WA0001.jpg');
   background-size: cover;
   background-position: center;

@@ -1,5 +1,4 @@
-
-    // === Demo Results ===
+ // === Demo Results ===
     const demoResults = {
       "1": {name:"Student A",marks:"1080/1100",grade:"A+"},
       "2": {name:"Student B",marks:"1055/1100",grade:"A"},
