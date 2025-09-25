@@ -78,6 +78,17 @@
 
     section{margin-top:18px;padding:16px;border-radius:10px;background:var(--card);border:1px solid rgba(0,255,0,0.03)}
     section h2{margin:0 0 12px 0;color:var(--neon);text-shadow:0 0 10px rgba(0,255,0,0.08)}
+.et_pb_video_box {
+  width: 200px; /* Width set karen */
+  height: 150px; /* Height set karen */
+  margin: 0 auto; /* Center mein video align karne ke liye */
+}
+
+.et_pb_video_box video {
+  width: 100%; /* Video ko container ke according set karen */
+  height: 100%; /* Video ko container ke according set karen */
+  object-fit: cover; /* Video ko container mein fit karne ke liye */
+}
 
     /* Faculty grid */
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
@@ -92,11 +103,103 @@
     .social a:hover{color:var(--neon-2)}
 
     /* Students grids */
-    .students-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
-    .student-card{background:rgba(0,255,0,0.02);padding:10px;border-radius:8px;text-align:center;border:1px solid rgba(0,255,0,0.04);transition:transform .12s ease}
-    .student-card:hover{transform:translateY(-6px); box-shadow:0 12px 40px rgba(0,255,0,0.03)}
-    .student-card img{width:100%;height:120px;object-fit:cover;border-radius:8px;border:1px solid rgba(0,255,0,0.06)}
-    .student-card .roll{margin-top:8px;font-weight:700;color:var(--neon)}
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.student-card {
+  background: #fff; /* Background color white set kiya gaya hai */
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid rgba(0, 255, 0, 0.04);
+  transition: transform 0.12s ease;
+}
+
+
+.student-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 255, 0, 0.03);
+}
+
+.student-card img {
+  width: 220px; /* Width bada kiya gaya hai */
+  height: 220px; /* Height bada kiya gaya hai */
+  object-fit: cover;
+  border-radius: 50%; /* Circle mein image dikhane ke liye */
+  border: 1px solid rgba(0, 255, 0, 0.06);
+  margin: 0 auto; /* Center mein image align karne ke liye */
+}
+
+.student-card .roll {
+  margin-top: 8px;
+  font-weight: 700;
+  color: var(--neon);
+}
+
+
+/* College Labm Slope*/
+.container-slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background-color: #000;
+  padding: 20px;
+}
+
+.card {
+  width: calc(20% - 16px);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  overflow: hidden;
+  background-color: #111;
+  border: 1px solid #0f0;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  
+
+}
+
+.card__head {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #222;
+  color: #0f0;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+/* Glowing effect */
+.card:hover {
+  box-shadow: 0 0 50px rgba(0, 255, 0, 1);
+  transition: all 0.1s ease-in-out;
+}
+
+.card:hover .card__head {
+  text-shadow: 0 0 20px rgba(0, 255, 0, 1);
+  transition: all 0.5s ease-in-out;
+}
+
+/* Responsive design ke liye */
+@media (max-width: 768px) {
+  .card {
+    width: calc(33.33% - 16px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}
 
     /* gallery */
     .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
